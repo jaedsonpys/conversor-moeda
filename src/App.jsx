@@ -20,16 +20,20 @@ class App extends React.Component {
 
         return (
             <div className='app'>
-                <div className='content'>
-                    <div className='dolarArea'>
-                        <h1>R$ {dolarPrice.toFixed(2)}</h1>
+                <main>
+                    <div className='content'>
+                        <div className='dolarArea'>
+                            <h1>R$ {dolarPrice.toFixed(2)}</h1>
+                        </div>
+                        <p>USD {'->'} BRL</p>
                     </div>
-                    <p>USD {'->'} BRL</p>
-                </div>
-                <div className='creator'>
-                    <p>Created by @jaedsonpys</p>
-                    <a href='https://github.com/jaedsonpys'>Meu GitHub</a>
-                </div>
+                </main>
+                <footer>
+                    <div className='creator'>
+                        <p>Created by @jaedsonpys</p>
+                        <a href='https://github.com/jaedsonpys'>Meu GitHub</a>
+                    </div>
+                </footer>
             </div>
         )}
 }
